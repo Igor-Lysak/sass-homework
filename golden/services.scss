@@ -1,0 +1,71 @@
+$yellow: #FED136;
+$colorb: #BBBBBB;
+$colorc: #CCCCCC;
+$color2: #222222;
+$color7: #777777;
+
+%fonts-settings{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+%flex{
+    display: flex;
+    justify-content: center;
+}
+
+
+a{
+    color:  $yellow;
+    @extend %fonts-settings;
+}
+
+.title{
+    @extend %fonts-settings;
+    color: $color2;
+
+}
+
+.content-title{
+    @extend %fonts-settings;
+    color: $color2;
+}
+
+.contact{
+    background-color: $color2;
+}
+
+.contact-text{
+    @extend %fonts-settings;
+}
+
+.form{
+    @extend %flex;
+}
+
+::placeholder{
+    @extend %fonts-settings;
+    color: $colorb;
+}
+
+.input{
+    border: 1px solid $colorc;
+}
+
+#area{
+    border: 1px solid $colorc;
+}
+
+.btn-wrapper{
+    @extend %flex;
+}
+
+.btn{
+    @extend %fonts-settings;
+}
+
+.btn:hover{
+    background-color: $yellow;
+}
+
